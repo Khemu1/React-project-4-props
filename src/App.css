@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+div#root {
+	font-weight: 500;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.parent {
+	background-color: #33373e;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+	color: white;
+	width: 481px;
+	height: 359px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.parent > * {
+	width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cont {
+	margin-top: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.parent header nav {
+	display: flex;
+	background-color: #282d35;
+	padding: 5px 10px;
+	align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header img {
+	width: 50px;
+}
+header .logo {
+	list-style: none;
+	display: flex;
+	gap: 5px;
+	margin-right: auto;
+	align-items: center;
+	color: #61dafb;
+}
+header .project-num {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+.cont > * {
+	padding: 5px 10px;
+}
+.cont ol {
+	margin: 0px;
+	list-style: disc;
+}
+.cont ol li {
+	margin-bottom: 10px;
+}
+.cont ol li::marker {
+	color: #61dafb;
 }
