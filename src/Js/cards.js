@@ -1,12 +1,19 @@
 import React from "react";
 
 function Cards(props) {
+	// console.log(props.e);
+	let status;
+	if (props.slotsLeft === 0) {
+		status = "sold-out";
+	} else if (props.slotsLeft > 0) {
+		status = "online";
+	}
 	return (
 		<article className="Cards">
 			<div className="container">
-				<div className="avi">{props.avi}</div>
+				{status && <div className="avi">{status}</div>}
 				<div className="img">
-					<img src={props.img} alt="swimmer" />
+					<img src={`../images/${props.img}`} alt="swimmer" />
 				</div>
 				<div className="pic-info">
 					<div className="rating-country">

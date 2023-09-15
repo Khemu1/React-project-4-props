@@ -62,6 +62,7 @@ article.Info .container p {
 article.Cards {
 	display: flex;
 	align-items: center;
+	padding-bottom: 15px;
 }
 .cards-cont {
 	display: flex;

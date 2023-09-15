@@ -1,0 +1,36 @@
+const data = [
+	{
+		id: "1",
+		img: "image 12.png",
+		rate: "5.0",
+		raters: "6",
+		from: "USA",
+		dec: "Life lessons with Katie Zaferes",
+		price: "$136",
+		type: "person",
+		slotsLeft: 0,
+	},
+	{
+		id: "2",
+		img: "wedding-photography 1.png",
+		rate: "5.0",
+		raters: "30",
+		from: "Canada",
+		dec: "Learn wedding photography",
+		price: "$125",
+		type: "person",
+		slotsLeft: 5,
+	},
+	{
+		id: "3",
+		img: "mountain-bike 1.png",
+		rate: "4.8",
+		raters: "2",
+		from: "Finland",
+		dec: "Group Mountain Bikinsg",
+		price: "$50",
+		type: "Group",
+		slotsLeft: 10,
+	},
+];
+export default data;
